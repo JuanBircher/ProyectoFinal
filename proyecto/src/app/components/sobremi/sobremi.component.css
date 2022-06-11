@@ -1,3 +1,39 @@
-p {
-    font-family: monospace;
+.row{
+    padding: 25px;
+}
+
+div{
+    background-color: black;
+    text-align: center;
+}
+
+/*id nivel especialización*/
+#nivel{
+    font-size: 18px;
+    font-weight: bold;
+    color: rgba(104, 183, 219, 0.877);
+    margin-top: 22%;
+}
+
+/*id foto de perfil*/
+@media (min-width: 576px){
+    #foto{
+        position: absolute;
+        width: 15%;
+        border-radius: 85%;
+        box-shadow: 5px 5px 5px rgb(46, 66, 177);
+        left: 2.2%;
+        top: 525px;
+    }
+}
+
+@media (max-width: 575px){
+    #foto{
+        position: none;
+        width: 45%;
+        border-radius: 100%;
+        box-shadow: 5px 5px 5px rgb(46, 66, 177);
+        left: 2.2%;
+        top: 250px;
+    }
 }
