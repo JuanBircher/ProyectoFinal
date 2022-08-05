@@ -19,8 +19,7 @@ import static io.jsonwebtoken.security.Keys.secretKeyFor;
 public class JwtProvider {
     private final static Logger logger = LoggerFactory.getLogger(JwtProvider.class);
     private Key secret;
-    @Value("${jwt.expiration}")
-    private int expiration;
+    private int expiration = 2500;
 
     private Key getSecret(){
         if(secret == null) secret = secretKeyFor(SignatureAlgorithm.HS512);
