@@ -37,9 +37,8 @@ public class PersonaController {
     public String deletePersona(@PathVariable Long id){
         ipersonaService.deletePersona(id);
     return "La persona fue eliminada correctamente";
-}
-    
-    //URL:PUERTO/personas/editar/4/nombre % apellido % img //
+    }
+
     @PreAuthorize("hasRole('ADMIN')")
     @PutMapping("personas/editar/{id}")
     public Persona editPersona (@PathVariable Long id,
