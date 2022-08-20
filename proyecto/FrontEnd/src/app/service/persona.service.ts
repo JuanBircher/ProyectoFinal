@@ -8,7 +8,6 @@ import { persona } from '../model/persona.model';
 })
 export class PersonaService {
   URL = 'https://proyecto-argentina-programa.herokuapp.com/personas/';
-
   constructor(private http: HttpClient) { }
 
   public getPersona(): Observable<persona>{
