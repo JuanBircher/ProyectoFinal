@@ -2,6 +2,15 @@
     padding: 25px;
 }
 
+p{
+  font-family: Arial;
+  color: steelblue;
+}
+
+h2{
+  color: #667eea;
+}
+
 div{
     background-color: black;
     text-align: center;

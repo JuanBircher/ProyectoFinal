@@ -21,6 +21,6 @@ h3{
     font-size: 15px;
 }
 
-p{
+p, h4{
     color: rgb(171, 168, 180);
 }
